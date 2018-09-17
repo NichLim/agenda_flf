@@ -4,11 +4,11 @@ public class Contato {
 	private String nome;
 	private String tel;
 	
-	Contato(){
+	public Contato(){
 		
 	}
 	
-	Contato(String nome, String tel){
+	public Contato(String nome, String tel){
 		this.nome = nome;
 		this.tel = tel;
 	}
@@ -30,7 +30,7 @@ public class Contato {
 	}
 	
 	public void mostraContato(){
-		System.out.print("Nome: "+this.nome);
-		System.out.print("Telefone: "+this.tel);
+		System.out.println("Nome: "+this.nome);
+		System.out.println("Telefone: "+this.tel);
 		}
 }
