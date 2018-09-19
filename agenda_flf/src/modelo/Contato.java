@@ -2,13 +2,13 @@ package modelo;
 
 public class Contato {
 	private String nome;
-	private String tel;
+	private long tel;
 	
 	public Contato(){
 		
 	}
 	
-	public Contato(String nome, String tel){
+	public Contato(String nome, long tel){
 		this.nome = nome;
 		this.tel = tel;
 	}
@@ -21,11 +21,11 @@ public class Contato {
 		this.nome = nome;
 	}
 
-	public String getTel() {
+	public long getTel() {
 		return tel;
 	}
 
-	public void setTel(String tel) {
+	public void setTel(long tel) {
 		this.tel = tel;
 	}
 	
