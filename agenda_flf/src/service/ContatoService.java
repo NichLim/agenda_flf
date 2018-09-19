@@ -44,4 +44,14 @@ public class ContatoService {
 		obj.setTel(tel);
 	}
 	//Deletar Contato
+	public void deletarContato(String nome){
+		listaContatos.remove(buscarContato(nome));
+	}
+	
+	//Listar Todos os Contato
+	public void listarContatos(){
+		for (Contato contato : listaContatos) {
+			contato.mostraContato();
+		}
+	}
 }

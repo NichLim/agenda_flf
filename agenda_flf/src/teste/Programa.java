@@ -39,11 +39,15 @@ public class Programa {
 		contatoService.addContato("Diego", 32148954);
 		contatoService.addContato("Daniel", 654781321);
 		contatoService.addContato("Jose", 654987321);
-		Contato obj = contatoService.buscarContato("Diego");
+		//Contato obj = contatoService.buscarContato("Diego");
 		
-		contatoService.configContato(obj, "DIOGO", 3214587);
+		// contatoService.configContato(obj, "DIOGO", 3214587);
 		
-		obj.mostraContato();
+		//obj.mostraContato(); 
+		contatoService.listarContatos();
 		
+		contatoService.deletarContato("Diego");
+		
+		contatoService.listarContatos();
 	}
 }
