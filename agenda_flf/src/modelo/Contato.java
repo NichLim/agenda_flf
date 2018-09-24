@@ -30,7 +30,7 @@ public class Contato {
 	}
 	
 	public void mostraContato(){
-		System.out.println("Nome: "+this.nome);
-		System.out.println("Telefone: "+this.tel);
+		System.out.println("Nome: "+this.nome + "\n");
+		System.out.println("Telefone: "+ this.tel + "\n");
 		}
 }

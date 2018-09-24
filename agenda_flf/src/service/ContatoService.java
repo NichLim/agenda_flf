@@ -22,7 +22,7 @@ public class ContatoService {
 	//Pesquisar Contato
 	public Contato buscarContato(String nome) {
 		for (Contato contato : listaContatos) {
-			if(contato.getNome() == nome) {
+			if(contato.getNome().equals(nome)) {
 				return contato;
 			}
 		}
@@ -53,5 +53,15 @@ public class ContatoService {
 		for (Contato contato : listaContatos) {
 			contato.mostraContato();
 		}
+	}
+	//Povoar a Lista de Contato
+	public void povoaContatos() {
+		addContato("Diego", 32148954);
+		addContato("Daniel", 654987321);
+		addContato("Jose", 65498712);
+		addContato("Maria", 12354);
+		addContato("Zezin", 12545);
+		addContato("Francisco", 114451);
+				
 	}
 }
